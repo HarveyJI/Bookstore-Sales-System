@@ -25,6 +25,9 @@
 
 
 2 相关技术介绍
+
+
+
 一.	JSP：是 JavaEE 平台下的技术规范。它允许使用特定的标签在 HTML 网页中插入 Java 代码，实现动态页面处理，所以 JSP 就是 HTML 与Java 代码的复合体。JSP 技术可以快速的实现一个页面的开发，相比在 Servlet 中实现页面开发将变得更加容易。
 
 二.	Javaservlet：在Web服务器端加载并运行的Java应用程序具体运行在Servlet引擎管理的JVM上。Servlet容器负责Servlet和用户的通信以及调用Servlet的方法。Servlet和用户的通信采用请求/响应模式。用于以动态响应客户机请求形式扩展Web服务器（Web Container）的功能。Servlet是开发服务器端应用程序的一个很好选择， Servlet与JSP结合使用，能提供更强大的服务器端功能。一个servlet就是Java编程语言中的一个类，它被用来扩展服务器的性能，服务器上驻留着可以通过“请求-响应”编程模型来访问的应用程序。
