@@ -1,0 +1,15 @@
+@charset "UTF-8";
+button{
+	        width: 80px;
+            height:30px;
+            border: none;
+            background-color: #FFFAFA;
+            line-height: 10px;
+            font-size: 10px;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+}
+            button:hover{
+	            background-color: #DCDCDC;
+            }
