@@ -47,6 +47,8 @@
 
 　 
 3 系统需求分析与设计
+
+
 3.1 业务需求分析
 随着图书数量日益增多，书店对图书的管理要求也越来越高，为了使图书信息的管理更加系统化，数字化，方便对会员信息管理，因此我们设计了该图书销售管理系统，用以方便管理员对图书销售和会员信息的管理。
 主要实现的功能有：
@@ -57,21 +59,34 @@
 系统采用“自顶向下，逐步求精“的分析与设计方法来完成各功能模块的设计。系统功能模块图如图3-2所示。
 管理
 
+![image](https://github.com/HarveyJI/Bookstore-Sales-System/assets/78439035/5c1634ce-8a61-4203-a755-40e36c03a0c6)
+
 图3.2 系统功能模块图 
 3.3数据库设计
 数据库是网上图书销售系统的重要组成部分。系统中所有的数据，数据间的关系都存储在数据库当中。这样以便于后台对数据的新增、修改、删除查询等各项操作。本系统采用MySQL数据库，数据库的名字为OBBS，数据库中有多张数据表，每个数据表中都有大量的数据，每一行代表着一条记录，每一列代表着一个字段。
 3.3.1 数据库实体图
 （1）图书及其属性：
- 
+
+ ![image](https://github.com/HarveyJI/Bookstore-Sales-System/assets/78439035/dfd18676-404e-45c5-9c0e-426b6cd1e05c)
+
 
 图3.3.1-1图书实体图
 （2）用户及其属性
+
+![image](https://github.com/HarveyJI/Bookstore-Sales-System/assets/78439035/e37759b0-c600-42b6-9ece-134117f622c5)
+
  
 图3.3.1-2用户实体图
 （3）销售信息
+
+![image](https://github.com/HarveyJI/Bookstore-Sales-System/assets/78439035/40f8e005-7b2b-4fbe-8ae4-b1cbbe802344)
+
  
 图3.3.1-3销售信息图
 (4)管理员信息
+
+![image](https://github.com/HarveyJI/Bookstore-Sales-System/assets/78439035/8e266264-96ac-487c-ac69-cf745cc604c9)
+
  
 图3.3.1-4管理员信息图
 
@@ -134,8 +149,11 @@
 2)	输入检查。通过导入外部Javascript脚本，检查账户、密码、选择权限是否为空。
 3)	账户检查。检查数据库中账户否存在、密码是否一致。
 (2)	截图
+
+![image](https://github.com/HarveyJI/Bookstore-Sales-System/assets/78439035/4bf8d3e8-a30c-4779-bb40-76518aef0893)
+
  
-           图4.1.1登录图
+图4.1.1登录图
 
 
 
@@ -145,6 +163,9 @@
 2)	输入检查。通过导入外部Javascript脚本，检查账户、密码、确认密码、手机号是否为空。账户必须已字母开头，6-18字符，允许字母数字下划线；密码必须6-18字符，允许字母数字下划线；手机号必须11个字符。
 3)	注册信息存入。通过输入检查后，且数据库没该注册信息，将用户输入的注册信息存储到数据库。
 (2)	截图
+
+![image](https://github.com/HarveyJI/Bookstore-Sales-System/assets/78439035/f7e6ab9a-5d66-4833-98ab-7e33076a0b17)
+
  
 图4.1.2注册图
 
@@ -153,6 +174,9 @@
 1)	背景。通过body background属性进行设置图片，再通过外部导入css对背景图片格式设置。
 2)	跳转。根据登入页面选的权限，分别跳转到相应界面。
 (2)	截图
+
+![image](https://github.com/HarveyJI/Bookstore-Sales-System/assets/78439035/38fdebf7-2f63-425c-8fd5-4fc771e27de4)
+
  
 图4.1.3加载界面图
 
@@ -162,6 +186,9 @@
 2)	时间显示。通过导入外部Javascript脚本，获取data对象，用document进行格式输出。
 3)	图片显示。通过设置表格的td的body进行图片设置。
 (2)	截图
+
+![image](https://github.com/HarveyJI/Bookstore-Sales-System/assets/78439035/b5c527e6-db09-4061-91e5-46a58c517524)
+
  
 图4.1.4用户首页图
 
@@ -169,6 +196,9 @@
 (1)	功能
 1)	布局。用frame进行布局分割，分为上、下两块，其中下又分为左右两块。上部主要显示用户名、退出登入。下部左侧显示管理功能。下部右侧显示相应窗口。
 (2)	截图
+
+![image](https://github.com/HarveyJI/Bookstore-Sales-System/assets/78439035/76f06c91-06dc-4b52-b131-415731dee2e5)
+
  
 图4.1.5管理员首页图
 
@@ -179,8 +209,13 @@
 3)	删除信息。选中相应记录行，点击该记录的删除操作，即可删除界面。
 4)	修改信息。点击相应修改操作，跳转到新页面，自动填充该记录的图书编号，修改相应信息，点击修改，将修改的信息存入数据库跳转至主页面。
 (2)	截图
+
+![image](https://github.com/HarveyJI/Bookstore-Sales-System/assets/78439035/30a722ae-ce59-467d-8919-9a2657ca8b47)
+
  
 图4.1.6-1图书库存信息管理图
+
+![image](https://github.com/HarveyJI/Bookstore-Sales-System/assets/78439035/4e938f1c-a289-4505-98fc-183629eda9d7)
 
  
 图4.1.6-2图书库存信息添加图
@@ -190,7 +225,9 @@
 1)	库存信息分页显示。当图书库存表有过多记录时，自动进行分页显示，以及有上一页、下一页、跳转到某一页。
 2)	查询图书总销售量。输入图书编号和年份信息，点击查询即可在总销售量显示信息。
 (2)	截图
- 
+
+![image](https://github.com/HarveyJI/Bookstore-Sales-System/assets/78439035/3928bff8-2f7d-4350-be72-b4fcc8120a40)
+
 
 图4.1.7图书销售信息管理图
 
@@ -259,27 +296,45 @@
 4.3	运行效果
 4.3.1	登入
 1)	未输入账户或密码
+
+![image](https://github.com/HarveyJI/Bookstore-Sales-System/assets/78439035/fcb48cf8-b241-46b6-881a-eaa69ded6aaf)
+
  
 图4.3.1-1错误1图
 
 2)	未选择角色
+
+![image](https://github.com/HarveyJI/Bookstore-Sales-System/assets/78439035/ffb866fd-3de2-4038-ab58-f1c661fb64f2)
+
  
 图4.3.1-2错误2图
 
 3)	密码错误
+   
+![image](https://github.com/HarveyJI/Bookstore-Sales-System/assets/78439035/cc238983-4559-45d4-93a8-6e7456a3fd5d)
+
  
 图4.3.1-3错误3图
 
 4.3.2	注册
 1)	未输入信息
+
+   ![image](https://github.com/HarveyJI/Bookstore-Sales-System/assets/78439035/3cfe0ee5-795e-4e58-b973-0389b0946bbd)
+
  
 图4.3.2-1错误1图
 
 2)	输入信息不合法
- 
+
+![image](https://github.com/HarveyJI/Bookstore-Sales-System/assets/78439035/106df44e-f107-42fc-bc13-3444264dffec)
+
+   
 图4.3.2-2错误2图
 
 3)	账户已存在
+
+![image](https://github.com/HarveyJI/Bookstore-Sales-System/assets/78439035/68e7f51b-df0a-44e3-b0a8-c122fb26e227)
+
  
 图4.3.2-3错误3图
 
